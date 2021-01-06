@@ -1,0 +1,31 @@
+/*
+f you don't already have a package.json file, create one with npm init.
+
+
+
+npx install-peerdeps --dev eslint-config-wesbos 
+
+"scripts": {
+  "lint": "eslint .",
+  "lint:fix": "eslint . --fix"
+},
+
+*/
+{
+  "extends": [
+    "wesbos"
+  ],
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": false
+      }
+    ],
+    "quotes": [
+      2,
+      "double"
+    ],
+  },
+  "root": true
+}
